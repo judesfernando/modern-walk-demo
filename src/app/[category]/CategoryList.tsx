@@ -15,7 +15,7 @@ const CategoryList: React.FC<{
   if (error instanceof Error) return <div>Error: {error.message}</div>;
 
   return (
-    <div>
+    <div className="mb-10">
       {isLoading && <div>Loading...</div>}
       {data && <ProductGrid items={data} />}
     </div>
