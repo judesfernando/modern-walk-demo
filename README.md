@@ -11,9 +11,9 @@ npm install
 # or
 yarn install
 ```  
-
 Before you run the project, you need to create the .env file to store environment variables for the project. 
-Manually create a .env file on the root of the project & add following line to the file.
+Copy `sample-env` and rename it to `.env` or 
+Manually create a new `.env` file on the root of the project & add following line to the file.
 ```
 NEXT_PUBLIC_PRODUCT_API_BASE_URL = https://fakestoreapi.com/products
 ```
