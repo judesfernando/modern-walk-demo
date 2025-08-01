@@ -12,7 +12,7 @@ interface CategoryPageProps {
 export async function generateMetadata({
   params,
 }: CategoryPageProps): Promise<Metadata> {
-  const {category} = await params
+  const {category} = params
   const categories = await productApiClient.get<string[]>("/categories");
   const categoryMap: Record<string, string> = categories.reduce((acc, cat) => {
     acc[slugify(cat)] = cat;
